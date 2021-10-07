@@ -11,10 +11,59 @@
     margin: auto;
     max-width: 1170px;
 }
+
 /* ***** header ***** */
 
 header{
+    font-weight: 600;
     height: 80px;
+    background-color: rgb(37 94 233);
+    line-height: 80px;
+}
+
+ #logo , #bottone{
+     width: 25%;
+     float: left;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+#bottone {
+    vertical-align:middle;
+    text-align: right;
+}
+
+.btn:hover{
+    text-decoration: none;
+}
+
+nav{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    text-decoration:none ;
+}
+
+nav li a {
+    color: white;
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#bottone a:hover{
+    text-decoration: none;
+}
+
+nav li a:hover{
+    text-decoration: underline ;
 }
 
 .clearfix:after{
@@ -23,8 +72,57 @@ header{
     clear: both;
 }
 
+.btn{
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    padding:5px 10px;
+    border-radius: 2em;
+    text-decoration: none;
+}
+
 #jumbotron{
     height: 550px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.text{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -65%);
+    color: white;
+}
+
+#jumbotron h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+#jumbotron p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.big{
+    font-size:20px;
+    padding: 15px 20px;
+    margin: 0 10px;
+}
+
+.white{
+    background-color: white;
+    color: black;
+}
+
+.black{
+    background-color: black;
+    color: white;
 }
 
 /* ***** main ***** */
@@ -33,19 +131,29 @@ header{
 
 /* ***** debug ***** */
 
-.debug .container{
-    background-color: red;
+/* .debug .container{
+    background-color: red; 
     height: 100%;
     border: 1px solid black;
-}
-
-/* .debug header{
-    background-color: grey;
 } */
 
-.debug #jumbotron{
-    background-color: yellow;
-}
+/* .debug .clearfix div{
+    height: 80px;
+    background-color: purple; 
+} */
+
+/* .debug .clearfix nav{
+    height: 80px;
+    background-color: white; 
+} */
+
+/* .debug header{
+    background-color: grey; 
+ } */
+
+/* .debug #jumbotron{
+     background-color: yellow; 
+} */
 
 .debug main{
     height: 900px;
